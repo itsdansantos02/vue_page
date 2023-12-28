@@ -1,41 +1,60 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import 'boxicons'
-</script>
+
 
 <template>
-    <div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="nav" style="padding: 0;">
-            <div class="nav-container">
-              <div class="nav-group">
-                <div class="title-img-center">
-                  <div class="title-img"></div>
-                </div>
-                <div class="title-name">DANILO SANTOS</div>
-                <br>
-                <router-link to="/"><div class="nav-item"><i class='bx bx-home-alt'></i><span>Home</span></div></router-link>
-                <router-link to="/project"><div class="nav-item"><i class='bx bx-folder'></i><span>Projects</span></div></router-link>
-                <router-link to="/about"><div class="nav-item"><i class='bx bx-user'></i><span>About</span></div></router-link>
-                <router-link to="/contact"><div class="nav-item"><i class='bx bx-phone'></i><span>Contact</span></div></router-link>
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="nav" style="padding: 0;">
+          <div class="nav-container">
+            <div class="nav-group">
+              <div class="title-img-center">
+                <div class="title-img"></div>
               </div>
+              <div class="title-name">DANILO SANTOS</div>
+              <br>
+              <router-link to="/">
+                <div class="nav-item"><i class='bx bx-home-alt'></i><span>Home</span></div>
+              </router-link>
+              <router-link to="/project">
+                <div class="nav-item"><i class='bx bx-folder'></i><span>Projects</span></div>
+              </router-link>
+              <router-link to="/about">
+                <div class="nav-item"><i class='bx bx-user'></i><span>About</span></div>
+              </router-link>
+              <!-- <router-link to="/contact">
+                <div class="nav-item"><i class='bx bx-phone'></i><span>Contact</span></div>
+              </router-link> -->
+              <div class="nav-item" @click="openPDF" style="cursor:pointer;"><i class='bx bx-notepad'></i><span>Résumé</span></div>
             </div>
           </div>
-          <div class="Rview">
-            <div class="container">
-              <div class="main">
-                <RouterView />
-              </div>
+        </div>
+        <div class="Rview">
+          <div class="container">
+            <div class="main">
+              <RouterView />
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </template>
+<script setup>
+import { ref } from 'vue'
+import { RouterLink, RouterView } from 'vue-router'
+import 'boxicons'
 
+const openPDF = () => {
+  const pdfPath = '/vue_page/src/assets/CV_Santos.pdf';
+  const newWindow = window.open(pdfPath, '_blank');
+  if (!newWindow) {
+    console.error('Failed to open the PDF. Please check your browser settings.');
+  }
+};
+</script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam:wght@300;400;700&family=Open+Sans:wght@300;400;500;700&family=PT+Sans:wght@400;700&family=Roboto:wght@100;300;400;700&family=Rubik:wght@300;400;500;700&display=swap');
+
 /* 
 font-family: 'Bebas Neue', sans-serif;
 font-family: 'Kalam', cursive;
@@ -56,10 +75,12 @@ font-family: 'Rubik', sans-serif;
   padding: 0;
   margin: 0;
 }
-.row{
+
+.row {
   display: grid;
   grid-template-columns: 350px 1fr;
 }
+
 /* Start Navigation */
 .nav {
   height: 100vh;
@@ -79,9 +100,8 @@ font-family: 'Rubik', sans-serif;
   border: 2px solid white;
   margin: auto;
 }
-.title-img-center{
 
-}
+.title-img-center {}
 
 .title-name {
   margin-top: 5px;
@@ -109,10 +129,12 @@ font-family: 'Rubik', sans-serif;
   display: flex;
   color: rgb(255, 255, 255, .1);
 }
-.nav-item span{
+
+.nav-item span {
   margin-left: 15px;
-  color: rgb(255, 255, 255,.6);
+  color: rgb(255, 255, 255, .6);
 }
+
 /* End Navigation */
 .Rview {
   /* background-color: rgba(21, 21, 21, 255); */
@@ -122,24 +144,29 @@ font-family: 'Rubik', sans-serif;
   height: 100vh;
 
 }
-.bx{
+
+.bx {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: -1px;
-  color: rgb(255, 255, 255,.6);
+  color: rgb(255, 255, 255, .6);
 }
-.nav-group a{
+
+.nav-group a {
   text-decoration: none;
 }
+
 .nav-item:hover .bx,
 .nav-item:hover span {
   color: rgb(255, 255, 255);
   transition: 0.3s;
 }
+
 .nav-item:hover span {
   text-decoration: underline;
   transition: 0.3s;
 }
+
 /* .nav-item:hover.bx,.bx:hover,.nav-item span:hover{
   color: rgb(255, 255, 255,1);
   text-decoration: underline;
@@ -149,5 +176,4 @@ font-family: 'Rubik', sans-serif;
 .nav-item:hover,.bx:hover,.nav-item span:hover{
   color: rgb(255, 255, 255,1);
   transition: 0.3s;
-} */
-</style>
+} */</style>
