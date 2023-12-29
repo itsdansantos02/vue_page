@@ -37,17 +37,20 @@
     <div class="row" id="row2">
       <div class="card" id="card2">
         <h1>Featured Projects</h1>
-        <a href="">See All</a>
+        <router-link to="/project">See All</router-link>
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../assets/shirs-2.png" class="d-block w-100" alt="../assets/shirs-2.png">
             </div>
             <div class="carousel-item">
-              <img src="../assets/shirs-3.png" class="d-block w-100" alt="../assets/shirs-3.png">
+              <img src="../assets/ams-2.jpg" class="d-block w-100" alt="../assets/shirs-3.png">
             </div>
             <div class="carousel-item">
               <img src="../assets/shirs-4.png" class="d-block w-100" alt="../assets/shirs-4.png">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/ams-10.jpg" class="d-block w-100" alt="../assets/shirs-4.png">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
@@ -69,6 +72,7 @@
 </template>
 
 <script setup>
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <style scoped>

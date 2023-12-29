@@ -16,25 +16,26 @@
             <div class="category">MySql</div>
             <div class="category">Ajax</div>
           </div>
-          <h3>SHIRS - User Panel</h3>
+          <h3>Student Health Record System</h3>
         </div>
       </div>
       <div class="tools-column">
         <div class="card" id="toContact">
           <div class="img" id="shirs-admin"><span>SHIRS</span></div>
           <div class="details">
-            <div class="category">Js</div>
             <div class="category">Css</div>
-            <div class="category">Php</div>
+            <div class="category">Laravel</div>
+            <div class="category">Vue</div>
             <div class="category">MySql</div>
-            <div class="category">Ajax</div>
+            <div class="category">Bootstrap</div>
+            <div class="category">Api</div>
           </div>
-          <h3>SHIRS - Admin Panel</h3>
+          <h3>Asset Management System</h3>
         </div>
       </div>
       <div class="tools-column">
         <div class="card" id="toContact">
-          <div class="img" id="shirs-admin"><span>SHIRS</span></div>
+          <div class="img" id="shirs-make"><span>SHIRS</span></div>
           <div class="details">
             <div class="category">UI/UX</div>
             <div class="category">Canva</div>
@@ -144,13 +145,19 @@
     transition: 5s ease;
   } */
 #shirs-user{
-  background-image: url('../assets/shirs-2.png');
+  background-image: url('../assets/project-shirs.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 #shirs-admin{
-  background-image: url('../assets/shirs-4.png');
+  background-image: url('../assets/project-ams.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#shirs-make{
+  background-image: url('../assets/project-make.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
