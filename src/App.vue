@@ -21,10 +21,7 @@
               <router-link to="/about">
                 <div class="nav-item"><i class='bx bx-user'></i><span>About</span></div>
               </router-link>
-              <!-- <router-link to="/contact">
-                <div class="nav-item"><i class='bx bx-phone'></i><span>Contact</span></div>
-              </router-link> -->
-              <div class="nav-item" @click="openPDF" style="cursor:pointer;"><i class='bx bx-notepad'></i><span>Résumé</span></div>
+                <a href="https://www.linkedin.com/in/itsdansantos" target="_blank"><div class="nav-item"><i class='bx bx-phone'></i><span>Contact</span></div></a>
             </div>
           </div>
         </div>
@@ -44,9 +41,8 @@ import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import 'boxicons'
 
-const openPDF = () => {
-  const pdfPath = '/vue_page/src/assets/CV_Santos.pdf';
-  const newWindow = window.open(pdfPath, '_blank');
+const openContact = () => {
+  const newWindow = window.open('www.linkedin.com/in/itsdansantos', '_blank');
   if (!newWindow) {
     console.error('Failed to open the PDF. Please check your browser settings.');
   }

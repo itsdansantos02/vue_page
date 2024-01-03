@@ -18,19 +18,19 @@
       <div class="tools">
         <h1>Skills and Experiences</h1>
         <div class="right minicard">
-          <div class="small-card" id="mini-cards">
+          <div class="small-card" id="mini-cards" data-bs-toggle="modal" data-bs-target="#SkillModal">
             <div class="technical"></div>
             <p>Technical Skills</p>
           </div>
-          <div class="small-card" id="mini-cards">
+          <div class="small-card" id="mini-cards" data-bs-toggle="modal" data-bs-target="#SoftModal">
             <div class="soft"></div>
             <p>Soft Skills</p>
           </div>
-          <div class="small-card" id="mini-cards">
+          <div class="small-card" id="mini-cards" data-bs-toggle="modal" data-bs-target="#InternModal">
             <div class="internship"></div>
             <p>Intership Experience</p>
           </div>
-          <div class="small-card" id="mini-cards">
+          <div class="small-card" id="mini-cards" data-bs-toggle="modal" data-bs-target="#LeadModal">
             <div class="leadership"></div>
             <p>Leadership Experiences</p>
           </div>
@@ -44,7 +44,8 @@
             <img src="../assets/vscode.png" alt="">
             <h3>Visual Studio Code</h3>
             <p>
-              A lightweight, open-source code editor developed by Microsoft. It is designed to be highly customizable and efficient for various programming and scripting languages.
+              A lightweight, open-source code editor developed by Microsoft. It is designed to be highly customizable and
+              efficient for various programming and scripting languages.
             </p>
           </div>
         </div>
@@ -53,7 +54,8 @@
             <img src="../assets/github.png" alt="">
             <h3>GitHub</h3>
             <p>
-              A web-based platform and service that provides a centralized location for version control and collaborative software development.
+              A web-based platform and service that provides a centralized location for version control and collaborative
+              software development.
             </p>
           </div>
         </div>
@@ -62,7 +64,8 @@
             <img src="../assets/canva.png" alt="">
             <h3>Canva</h3>
             <p>
-              An online graphic design platform that allows users to create a wide range of visual content easily and without the need for advanced design skills. 
+              An online graphic design platform that allows users to create a wide range of visual content easily and
+              without the need for advanced design skills.
             </p>
           </div>
         </div>
@@ -76,17 +79,143 @@
     <br>
     <br>
   </div>
+  <!-- Skill Modal Start -->
+  <div class="modal fade" id="SkillModal" tabindex="-1" aria-labelledby="SkillModalLabel" aria-hidden="true">
+    <div class="modal-dialog" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="SkillModalLabel">Soft Skills</h3>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Programming Languages</li>
+            <span>&nbsp;(Java, PHP, Javascript, Phyton)</span>
+            <li>Front-End</li>
+            <span>&nbsp;(HTML, CSS, Bootstrap, Vue.js, Nuxt.js)</span>
+            <li>Back-End</li>
+            <span>&nbsp;(PHP, Laravel, MySQL)</span>
+            <li>Programming Tools</li>
+            <span>&nbsp;(Visual Studio Code, MySQL Workbench, Git)</span>
+            <li>API</li>
+            <span>&nbsp;(Axios)</span>
+            <li>State Management</li>
+            <span style="color:rgba(255, 255, 255, .8)">&nbsp;(Vuex, Pinia)</span>
+            <li>IDEs</li>
+            <span>&nbsp;(Visual Studio Code, Apache NetBeans, Atom)</span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Skill Modal End -->
+  <!-- Soft Modal Start -->
+  <div class="modal fade" id="SoftModal" tabindex="-1" aria-labelledby="SoftModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 50%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="SoftModalLabel">Technical Skills</h3>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Excellent communication skills in order to work effectively with team members.</li>
+            <li>Project management abilities to effectively plan, organize, and prioritize tasks.</li>
+            <li>Excellent time management and prioritization skills to meet project deadlines.</li>
+            <li>Ability to work independently and as a part of a team.</li>
+            <li>Effective problem-solving skills, adapting to challenges, and making informed decisions under pressure.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Soft Modal End -->
+  <!-- Intern Modal Start -->
+  <div class="modal fade" id="InternModal" tabindex="-1" aria-labelledby="InternModalLabel" aria-hidden="true">
+    <div class="modal-dialog" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="InternModalLabel">Internship Experience</h3>
+        </div>
+        <div class="modal-body">
+          <h5>Web Developer Intern - Qpax Traffic Systems Inc.</h5>
+          <span>&nbsp;&nbsp;- Designed and implemented an asset management system to optimize the tracking and organization of company resources.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Intern Modal End -->
+  <!-- Lead Modal Start -->
+  <div class="modal fade" id="LeadModal" tabindex="-1" aria-labelledby="LeadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="LeadModalLabel">Leadership Experience</h3>
+        </div>
+        <div class="modal-body">
+          <h5>Explorers in Communication and Information Technology - Secretary (2020-2022)</h5>
+          <ul>
+            <li><span>&nbsp;Managed comprehensive organizational documentation, encompassing certifications, letters of invitation, and letters of approval.</span></li>
+            <li><span>&nbsp;Compiled and submitted a detailed accomplishment report, meticulously documenting all organizational activities and events.</span></li>
+          </ul>
+          <h5>Explorers in Communication and Information Technology - External Information Officer (2022-2023)</h5>
+          <ul>
+            <li><span>&nbsp;Proactively engaged with alumni and distinguished IT professionals to establish connections and secure their participation as guest speakers for upcoming events. Demonstrated effective communication skills in coordinating and confirming their involvement</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Lead Modal End -->
 </template>
 <script>
 
 </script>
 <style scoped>
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255, .9); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 .about-container {
   padding: 8% 3% 0 3%;
   width: 100%;
   margin: auto;
 }
-
+.modal-dialog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: auto;
+}
+.modal-content{
+  width: 100%;
+  background-color: #171821;
+  max-height: 500px;
+  overflow: auto;
+}
+.modal-content li{
+  font-size: 19px;
+}
+#SoftModal .modal-content li{
+  font-size: 18px;
+}
+.modal-content span{
+  font-size: 16px;
+  color: rgb(255, 255, 255, .7);
+}
 .about-container h1 {
   font-size: 60px;
 }
@@ -99,7 +228,8 @@
   font-size: 18px;
   color: rgb(255, 255, 255, .7);
 }
-img{
+
+img {
   height: 50px;
   width: 50px;
   margin-top: -20px;
@@ -240,9 +370,11 @@ img{
 #toContact p {
   color: rgb(255, 255, 255, .6);
 }
-.tools-column{
+
+.tools-column {
   padding: 0;
 }
+
 .about-tools .card:hover {
   background-color: #36384a;
   transition: .3s ease;

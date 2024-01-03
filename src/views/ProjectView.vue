@@ -16,7 +16,10 @@
             <div class="category">MySql</div>
             <div class="category">Ajax</div>
           </div>
-          <h3>Student Health Record System</h3>
+          <div class="tools-footer">
+            <h3 title="Student Health Record Information System">SHIRS</h3>
+            <a href="#" @click.prevent="showAlert"><i class='bx bxs-arrow-from-left'></i></a>
+          </div>
         </div>
       </div>
       <div class="tools-column">
@@ -25,12 +28,15 @@
           <div class="details">
             <div class="category">Css</div>
             <div class="category">Laravel</div>
-            <div class="category">Vue</div>
+            <div class="category">Nuxt</div>
             <div class="category">MySql</div>
             <div class="category">Bootstrap</div>
             <div class="category">Api</div>
           </div>
-          <h3>Asset Management System</h3>
+          <div class="tools-footer">
+            <h3 title="Asset Management System">Asset Management System</h3>
+            <a href="#" @click.prevent="showAlert"><i class='bx bxs-arrow-from-left'></i></a>
+          </div>
         </div>
       </div>
       <div class="tools-column">
@@ -40,7 +46,10 @@
             <div class="category">UI/UX</div>
             <div class="category">Canva</div>
           </div>
-          <h3>Make-EAT</h3>
+          <div class="tools-footer">
+            <h3 title="Make-EAT">Make-EAT</h3>
+            <a href="https://www.canva.com/design/DAFHU0J1da4/RavCGkXAOzvRt2k_BdbQbw/edit?utm_content=DAFHU0J1da4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><i class='bx bxs-arrow-from-left'></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -49,9 +58,36 @@
   </div>
 </template>
 <script>
-
+export default {
+  methods: {
+    showAlert() {
+      // Show an alert when the link is clicked
+      alert('Preview is not yet available, Please Contact the owner to access');
+    }
+  }
+}
 </script>
 <style scoped>
+.tools-footer{
+ display: flex;
+ justify-content: space-between;
+}
+.tools-footer i{
+ font-size: 35px;
+ cursor: pointer;
+}
+.tools-footer a{
+ margin: 3% 6% 2%;
+ text-decoration: none;
+ color: white;
+}
+.tools-footer i:hover{
+ text-decoration: underline;
+ color: #9da0be;
+}
+.tools-footer h3{
+  cursor: pointer;
+}
 .about-container {
   padding: 8% 3% 0 3%;
   width: 100%;
