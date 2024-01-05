@@ -48,7 +48,8 @@
           </div>
           <div class="tools-footer">
             <h3 title="Make-EAT">Make-EAT</h3>
-            <a href="https://www.canva.com/design/DAFHU0J1da4/RavCGkXAOzvRt2k_BdbQbw/edit?utm_content=DAFHU0J1da4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><i class='bx bxs-arrow-from-left'></i></a>
+            <a href="https://www.canva.com/design/DAFHU0J1da4/RavCGkXAOzvRt2k_BdbQbw/edit?utm_content=DAFHU0J1da4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              target="_blank"><i class='bx bxs-arrow-from-left'></i></a>
           </div>
         </div>
       </div>
@@ -68,26 +69,31 @@ export default {
 }
 </script>
 <style scoped>
-.tools-footer{
- display: flex;
- justify-content: space-between;
+.tools-footer {
+  display: flex;
+  justify-content: space-between;
 }
-.tools-footer i{
- font-size: 35px;
- cursor: pointer;
-}
-.tools-footer a{
- margin: 3% 6% 2%;
- text-decoration: none;
- color: white;
-}
-.tools-footer i:hover{
- text-decoration: underline;
- color: #9da0be;
-}
-.tools-footer h3{
+
+.tools-footer i {
+  font-size: 35px;
   cursor: pointer;
 }
+
+.tools-footer a {
+  margin: 3% 6% 2%;
+  text-decoration: none;
+  color: white;
+}
+
+.tools-footer i:hover {
+  text-decoration: underline;
+  color: #9da0be;
+}
+
+.tools-footer h3 {
+  cursor: pointer;
+}
+
 .about-container {
   padding: 8% 3% 0 3%;
   width: 100%;
@@ -131,12 +137,14 @@ export default {
   justify-content: center;
   align-items: left;
 }
-#toContact .details{
+
+#toContact .details {
   padding: 5% 6% 1%;
   display: flex;
   gap: 10px;
 }
-#toContact .details .category{
+
+#toContact .details .category {
   padding: 4px 15px;
   /* background-color: #262736; */
   background-color: #21222d;
@@ -145,20 +153,24 @@ export default {
   text-align: center;
   color: rgb(255, 255, 255, .6);
 }
+
 #toContact .details p {
   color: rgb(255, 255, 255, .6);
 }
-#toContact h3{
+
+#toContact h3 {
   margin: 3% 6% 2%;
 }
-.tools-column{
+
+.tools-column {
   padding: 0;
 }
+
 /* .about-tools .card:hover {
   background-color: #36384a;
   transition: .3s ease;
 } */
-.about-tools .img{
+.about-tools .img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,35 +180,89 @@ export default {
   border-top-right-radius: 10px;
   margin-top: -4%;
 }
-.img span{
+
+.img span {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  color: rgba(23,24,33,.8);
+  color: rgba(23, 24, 33, .8);
   font-size: 120px;
-  display:none;
+  display: none;
   transition: 5s ease;
 }
+
 /* .card:hover .img span {
     display: block;
     transition: 5s ease;
   } */
-#shirs-user{
+#shirs-user {
   background-image: url('../assets/project-shirs.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-#shirs-admin{
+
+#shirs-admin {
   background-image: url('../assets/project-ams.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-#shirs-make{
+
+#shirs-make {
   background-image: url('../assets/project-make.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
+/* MEDIA */
+@media screen and (max-width: 1256px) {
+  .about-tools .row {
+    padding: 3% 4% 0 4%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .about-tools .card {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .about-tools .card {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 846px) {
+  .about-tools .card {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .about-tools .card {
+    width: 85%;
+  }
+  .about-container h1 {
+  font-size: 50px;
+}
+}
+@media screen and (max-width: 720px) {
+  .about-tools .card {
+    width: 90%;
+  }
+  .about-container h1 {
+  font-size: 45px;
+  margin-top: 10px;
+}
+}
+@media screen and (max-width: 675px) {
+  .about-tools .card {
+    width: 96%;
+  }
+}
+
 </style>
   

@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="Rview">
-          <div class="container">
+          <div >
             <div class="main">
               <div class="burger-main" style="text-align: left;margin-bottom: -63px;">
                 <i class='bx bx-menu' @click="openNav()"></i>
@@ -311,6 +311,11 @@ font-family: 'Rubik', sans-serif;
   }
   .nav{
     display: none;
+  }
+}
+@media screen and (max-width: 952px) {
+  .Rview{
+    padding: 0;
   }
 }
 </style>

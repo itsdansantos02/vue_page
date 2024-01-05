@@ -379,4 +379,75 @@ img {
   background-color: #36384a;
   transition: .3s ease;
 }
+
+/* MEDIA */
+@media screen and (max-width: 1048px) {
+  #mini-cards p {
+  font-size: 18px;
+}
+}
+@media screen and (max-width: 1000px) {
+  #mini-cards p {
+  font-size: 16px;
+  }
+  
+}
+
+@media screen and (max-width: 950px) {
+  .small-card .technical {
+  width: 90px;
+  height: 90px;
+}
+
+.small-card .soft {
+  width: 90px;
+  height: 90px;
+}
+
+.small-card .internship {
+  width: 90px;
+  height: 90px;
+}
+
+.small-card .leadership {
+  width: 90px;
+  height: 90px;
+}
+}
+@media screen and (max-width: 850px) {
+  .about-skill {
+  grid-template-columns: repeat(1, 1fr);
+}
+.about-skill .img {
+  width: 450px;
+  margin:auto;
+}
+.about-tools .row {
+  padding: 3% 3% 0 3%;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+.about-container h1 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+}
+@media screen and (max-width: 746px) {
+  .right {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 400px;
+}
+}
+
+@media screen and (max-width: 620px) {
+  .about-container h1 {
+  font-size: 40px;
+  margin-top: 18px;
+}
+}
 </style>

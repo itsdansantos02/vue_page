@@ -1,6 +1,6 @@
 
 <template>
-  <div class="container">
+  <div class="container-home">
     <div class="title">
       <h1>Web/Software Development</h1>
       <h4>Danilo C. Santos Jr.</h4>
@@ -207,4 +207,62 @@ import { RouterLink, RouterView } from 'vue-router'
 
 #card2 p {
   color: rgb(255, 255, 255, .6);
+}
+
+/* MEDIA */
+@media screen and (max-width: 952px) {
+  .title h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 746px) {
+  .title h1 {
+    font-size: 45px;
+  }
+
+  .row {
+    padding: 3% 3% 0 3%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .container-home {
+    width: 95%;
+    margin: auto;
+  }
+
+  #card2 {
+    height: 420px;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+  .title h1 {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+
+  .title h4 {
+    font-size: 20px;
+  }
+
+  #card2 h1 {
+    font-size: 40px;
+  }
+
+  .carousel {
+    margin-top: 20px;
+    width: 85%;
+  }
+
+  #card2 {
+    height: 400px;
+  }
+
+  #card2 {
+    padding: 0;
+  }
 }</style>
